@@ -1,0 +1,166 @@
+#Server main settings
+server_name: Dank Dreams and Broken Necks
+#default - uses server_name
+player_list_title: default
+player_list_title_rate: default
+serverinfo_pastebin_id: 7wV681fT
+server_ip: auto
+max_players: 20
+use_reserved_slots: true
+lobby_waiting_time: 60
+ipv4_bind_ip: 0.0.0.0
+ipv6_bind_ip: ::
+contact_email: default
+
+#Spawn settings
+minimum_MTF_time_to_spawn: 280
+maximum_MTF_time_to_spawn: 350
+priority_mtf_respawn: true
+use_crypto_rng: false
+ci_respawn_percent: 35
+ci_on_start_percent: 10
+team_respawn_queue: 40143140314414041340
+
+#Random-stuff settings (-1: random)
+server_forced_class: -1
+map_seed: -1
+
+#Misc gameplay settings
+intercom_cooldown: 120
+intercom_max_speech_time: 20
+auto_round_restart_time: 10
+friendly_fire: true
+warhead_tminus_start_duration: 90
+human_grenade_multiplier: 0.7
+scp_grenade_multiplier: 1
+lock_gates_on_countdown: true
+isolate_zones_on_countdown: false
+open_doors_on_countdown: true
+keep_items_after_escaping: true
+allow_playing_as_tutorial: true
+disable_decontamination: false
+096_destroy_locked_doors: true
+no_holidays: false
+allow_disarmed_interaction: false
+
+#Pocket Dimension settings
+pd_exit_count: 2
+pd_random_exit_rids:
+pd_random_exit_rids_after_decontamination:
+pd_refresh_exit: false
+
+#Disarmer settings
+mtf_can_cuff_researchers: true
+ci_can_cuff_class_d: true
+cuffed_escapee_change_team: true
+
+#Spawn Protect settings
+spawn_protect_disable: true
+spawn_protect_time: 30
+spawn_protect_team: [1, 2]
+spawn_protect_allow_dmg: true
+
+#Grenades chaining options
+#-1 to unlimited, 0 to disable chain reaction
+
+#max amount of grenades that can be activated by a single grenade
+grenade_chain_limit: 10
+
+#limit of length of grenades chain
+grenade_chain_length_limit: 4
+
+#Security & Anticheat (default settings are good enough in most cases)
+online_mode: true
+ip_banning: true
+enable_whitelist: false
+hide_from_public_list: false
+forward_ports: true
+enable_query: false
+query_port_shift: 0
+query_use_IPv6: true
+administrator_query_password: none
+enable_sync_command_binding: false
+anti_player_wallhack: default
+ratelimit_kick: true
+
+#This enforces the player to be using same IP address to connect to the game and authenticate.
+#Enabling this blocks proxies. Not enforced if player joined from IPv4 and authenticated from IPv6 or viceversa.
+#Situations with combinating IPv4 and IPv6 addresses are being checked on central servers after authentication (only for servers on public list).
+enforce_same_ip: true
+no_enforcement_for_local_ip_addresses: true
+
+#This enforces that the IP address used to connect to the game and authenticate must be assigned to the same Internet Service Provider (ISP).
+#Works only on servers on the public list. This is less restrictive that "enforce_same_ip" and blocks most of the proxies.
+enforce_same_asn: true
+
+#Connections ratelimiting
+#Ratelimit time windows define how often user with the same IP/UserID can initialize new connection (once per X seconds).
+enable_ip_ratelimit: true
+enable_userid_ratelimit: true
+ip_ratelimit_window: 3
+userid_ratelimit_window: 5
+
+#DefaultAmmo
+class_d_personnel_defaultammo: [0, 0, 0]
+nine_tailed_fox_scientist_defaultammo: [120, 20, 20]
+scientist_defaultammo: [0, 0, 0]
+chaos_insurgency_defaultammo: [0, 100, 0]
+nine_tailed_fox_lieutenant_defaultammo: [80, 0, 50]
+nine_tailed_fox_commander_defaultammo: [120, 0, 100]
+nine_tailed_fox_cadet_defaultammo: [40, 0, 100]
+tutorial_defaultammo: [0, 0, 0]
+facility_guard_defaultammo: [0, 35, 0]
+
+#Enable this ONLY if you use plugin or modification that provides custom whitelist.
+#This is only to mark the server on the public list as using a whitelist.
+#More information can be found in Verified Server Rules. If your server is not on the public list - ignore this.
+custom_whitelist: false
+
+#Enable this ONLY if you use plugin or modification that restricts access to the server (other than whitelist, eg. password).
+#This is only to mark the server on the public list as using access restriction.
+#More information can be found in Verified Server Rules. If your server is not on the public list - ignore this.
+server_access_restriction: false
+
+#port_queue is for NONDEDICATED SERVERS ONLY
+port_queue:
+ - 7777
+ - 7778
+ - 7779
+ - 7780
+ - 7781
+ - 7782
+ - 7783
+ - 7784
+
+#Enabling this will automatically ban IP of players on the server that receives a Global Ban by a Global Moderator. (Defaults to false)
+gban_ban_ip: default
+
+noclip_protection_output: false
+speedhack_protection_output: false
+
+#Administrative actions broadcast options
+broadcast_kicks: false
+broadcast_kick_text: %nick% has been kicked from this server.
+broadcast_kick_duration: 5
+broadcast_bans: true
+broadcast_ban_text: %nick% has been banned from this server.
+broadcast_ban_duration: 5
+
+#Geoblocking
+#If your server is on the public list, please refer to Verified Server Rules for more details.
+#Modes: none, whitelist, blacklist
+geoblocking_mode: none
+
+#If enabled, players on the whitelist are able to ignore geoblocking.
+geoblocking_ignore_whitelisted: true
+
+#ISO country codes, eg. PL, US, DE
+geoblocking_whitelist:
+ - AA
+ - AB
+ - AC
+
+geoblocking_blacklist:
+ - AA
+ - AB
+ - AC

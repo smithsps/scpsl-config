@@ -19,7 +19,9 @@ priority_mtf_respawn: true
 use_crypto_rng: false
 ci_respawn_percent: 35
 ci_on_start_percent: 10
-team_respawn_queue: 40143140314414041340
+#default: team_respawn_queue: 40143140314414041340
+team_respawn_queue: 40143143104414041340
+smart_class_picker: true
 
 #Random-stuff settings (-1: random)
 server_forced_class: -1
@@ -42,12 +44,14 @@ disable_decontamination: false
 096_destroy_locked_doors: true
 no_holidays: false
 allow_disarmed_interaction: false
+#default DroppedAndPlayerTeleport Inventory DroppedAndInventory Held DroppedAndHeld Dropped 
+914_mode: DroppedAndInventory 
 
 #Pocket Dimension settings
 pd_exit_count: 2
 pd_random_exit_rids:
 pd_random_exit_rids_after_decontamination:
-pd_refresh_exit: false
+pd_refresh_exit: true
 
 #Disarmer settings
 mtf_can_cuff_researchers: true
@@ -135,8 +139,8 @@ port_queue:
 #Enabling this will automatically ban IP of players on the server that receives a Global Ban by a Global Moderator. (Defaults to false)
 gban_ban_ip: default
 
-noclip_protection_output: false
-speedhack_protection_output: false
+noclip_protection_output: true
+speedhack_protection_output: true 
 
 #Administrative actions broadcast options
 broadcast_kicks: false

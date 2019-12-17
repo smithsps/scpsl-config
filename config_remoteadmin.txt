@@ -3,7 +3,8 @@
 Members:
  - 76561198026780911@steam: owner
  - 76561198046529332@steam: admin
- - 76561198040048140@steam: admin
+ - 76561198040048140@steam: moderator
+ - 76561198028673485@steam: admin
 
 #Should Secret Lab development staff be able to use the Remote Admin?
 enable_staff_access: false
@@ -73,13 +74,13 @@ Permissions:
  - Overwatch: [owner, admin, moderator]
  - FacilityManagement: [owner, admin, moderator]
  - PlayersManagement: [owner, admin]
- - PermissionsManagement: [owner, admin]
+ - PermissionsManagement: [owner]
  - ServerConsoleCommands: []
  - ViewHiddenBadges: [owner, admin, moderator]
  - ServerConfigs: [owner]
  - Broadcasting: [owner, admin, moderator]
  - PlayerSensitiveDataAccess: [owner, admin, moderator]
- - Noclip: [owner, admin]
+ - Noclip: [owner]
 
 #Set to "none" in order to disable password.
 #WE DON'T RECOMMEND USING PASSWORD!!!

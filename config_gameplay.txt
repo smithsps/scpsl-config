@@ -20,7 +20,7 @@ use_crypto_rng: false
 ci_respawn_percent: 35
 ci_on_start_percent: 10
 #default: team_respawn_queue: 40143140314414041340
-team_respawn_queue: 40143143104414041340
+team_respawn_queue: 40143143401414041340
 smart_class_picker: true
 
 #Random-stuff settings (-1: random)

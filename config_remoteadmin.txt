@@ -59,6 +59,7 @@ Roles:
 #Let's setup permissions for roles
 #More info can be found on our wiki: https://en.scpslgame.com/index.php/Docs:Permissions
 Permissions:
+ - AFKImmunity: []
  - KickingAndShortTermBanning: [owner, admin, moderator]
  - BanningUpToDay: [owner, admin, moderator]
  - LongTermBanning: [owner, admin]

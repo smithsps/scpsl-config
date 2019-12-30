@@ -15,6 +15,8 @@ contact_email: default
 #Spawn settings
 minimum_MTF_time_to_spawn: 280
 maximum_MTF_time_to_spawn: 350
+maximum_MTF_respawn_amount: default
+maximum_CI_respawn_amount: default
 priority_mtf_respawn: true
 use_crypto_rng: false
 ci_respawn_percent: 35
@@ -28,6 +30,7 @@ server_forced_class: -1
 map_seed: -1
 
 #Misc gameplay settings
+afk_time: 0
 intercom_cooldown: 120
 intercom_max_speech_time: 20
 auto_round_restart_time: 10
@@ -52,6 +55,10 @@ pd_exit_count: 2
 pd_random_exit_rids:
 pd_random_exit_rids_after_decontamination:
 pd_refresh_exit: true
+
+#Sink Hole settings
+sinkhole_slow_amount: default
+sinkhole_spawn_chance: default
 
 #Disarmer settings
 mtf_can_cuff_researchers: true
@@ -139,8 +146,8 @@ port_queue:
 #Enabling this will automatically ban IP of players on the server that receives a Global Ban by a Global Moderator. (Defaults to false)
 gban_ban_ip: default
 
-noclip_protection_output: true
-speedhack_protection_output: true 
+noclip_protection_output: false
+speedhack_protection_output: false
 
 #Administrative actions broadcast options
 broadcast_kicks: false

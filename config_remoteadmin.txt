@@ -3,7 +3,7 @@
 Members:
  - 76561198026780911@steam: owner
  - 76561198046529332@steam: admin
- - 76561198040048140@steam: moderator
+ - 76561198040048140@steam: admin
  - 76561198028673485@steam: admin
 
 #Should Secret Lab development staff be able to use the Remote Admin?
@@ -61,8 +61,8 @@ Roles:
 Permissions:
  - AFKImmunity: []
  - KickingAndShortTermBanning: [owner, admin, moderator]
- - BanningUpToDay: [owner, admin, moderator]
- - LongTermBanning: [owner, admin]
+ - BanningUpToDay: [owner]
+ - LongTermBanning: [owner]
  - ForceclassSelf: [owner, admin, moderator]
  - ForceclassToSpectator: [owner, admin, moderator]
  - ForceclassWithoutRestrictions: [owner, admin]
@@ -77,7 +77,7 @@ Permissions:
  - PlayersManagement: [owner, admin]
  - PermissionsManagement: [owner]
  - ServerConsoleCommands: []
- - ViewHiddenBadges: [owner, admin, moderator]
+ - ViewHiddenBadges: [owner]
  - ServerConfigs: [owner]
  - Broadcasting: [owner, admin, moderator]
  - PlayerSensitiveDataAccess: [owner, admin, moderator]
